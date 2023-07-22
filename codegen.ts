@@ -184,7 +184,7 @@ function readPointer(v: any): Uint8Array {
   return buf;
 }
 
-const url=new URL("${name}.\${getExt()}", import.meta.url);
+const url=new URL(\`${name}.\${getExt()}\`, import.meta.url);
 ${
       typeof options?.releaseURL==="string"
        ?`
